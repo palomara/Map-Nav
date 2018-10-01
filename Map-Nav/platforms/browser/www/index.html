@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+	<link rel="icon" href="img/logo.png" />
+      <style type="text/css">
+       #map {
+         height: 900px;
+         width: 1400px;
+         top:0;
+         left:0;
+       }
+	   
+	   #header {
+	   background-color: lightblue;
+	   }
+	   
+	   #btn {
+	   background-color: yellow;
+	   }
+	   
+       html, body {
+           height: ;
+           margin: 0;
+           padding: 0;
+       }
+      </style>
+
+      <meta charset="utf-8">
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <meta http-equiv="Content-Security-Policy" content="default-src *; frame-src * ;">
+
+    <link rel="stylesheet" href="css/themes/my-custom-theme.css" />
+   <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkJrvs4HIbcNCIQQGr5bl6bAyT0Wou57g"></script>
+        <script src="./js/gmapsutils.js"></script>
+
+      <title>MAPS</title>
+
+
+    </head>
+    <body>
+        <div id="header" data-role="header" data-position="fixed" data-theme="a">
+            <h1><b>GOOGLE MAPS</b></h1>
+            <div  data-role = "navbar" data-position="fixed" data-theme="a">
+            <ul>
+               <li><a href = "#" id="btn" >Mapa</a></li>
+               <li><a href = "#"id="btn">Informações</a></li>
+            </ul>
+         </div>
+        </div>
+      
+        <div id="map"></div>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
+
+
